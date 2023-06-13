@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0%;
     padding: 0%;
@@ -18,8 +20,12 @@ li{
     list-style: none;
 }
 
-
-
+/* 
+.header{
+    border: 20px solid #f8e53f;
+    border-radius: 10px;
+    padding-bottom: 3rem;
+} */
 
 /* NAV-BAR */
 .nav-bar{
@@ -27,7 +33,7 @@ li{
     align-items: center;
     justify-content: center;
     gap: 15rem;
-    margin: 0.3rem 3rem;
+    margin: 1rem 3rem;
 }
 .logo img{
     width: 50px;
@@ -41,13 +47,32 @@ li{
 }
 .links li a{
     padding: 0 1.5rem;
+    transition: 0.3s ease-in;
 }
 .btn1{
     background-color: #f8e53f;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     font-weight: 500;
+    transition: 0.7s ease-in-out;
 }
+
+
+.links li a:hover{
+    width: 20px;
+    background-color: none;
+    border-bottom: 5px solid #f8e53f;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn1:hover{
+    width: 20px;
+    background-color: #0a0811;
+    color: #f8e53f;
+    transition: 0.5s ease-in-out;
+}
+
 
 
 
@@ -61,11 +86,12 @@ li{
 /* Banner */
 .banner{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 7rem;
+    padding: 0 1rem;
 }
 .with-bg{
     background-color: #f8e53f;
-    font-size: 35px;
+    font-size: 37px;
     font-weight: 600;
     width: fit-content;
     display: inline-block;
@@ -74,27 +100,28 @@ li{
     border-radius: 5px;
 }
 .banner h1{
-    font-size: 35px;
+    font-size: 37px;
     font-weight: 600;
     margin-top: 1rem;
 }
 .p{
-margin-top: 4rem;
+    margin-top: 3rem;
 }
+
 .review{
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     width: fit-content;
     display: inline-flex;
-    padding: 1rem 4rem;
-    margin-top: 6rem;
-    box-shadow: 3px 6px 15px 5px #e7e7e7;
+    gap: 7rem;
+    padding: 0.7rem 4rem;
+    margin-top: 3rem;
+    box-shadow: 3px 6px 15px 5px #d4d4d4;
+    margin: 3 1rem;
+    border-radius: 10px;
 }
-.review2{
-    margin-left: 7rem;
-}
+
 .review h2{
     font-size: 25px;
     font-weight: 400;
@@ -105,4 +132,83 @@ margin-top: 4rem;
     margin-top: -1.6rem;
     font-size: 12px;
     color: #585656;
+}
+
+
+
+
+@media (max-width: 375px){
+    .links a{
+        display: none;
+    }
+    .btn1{
+        display: none;
+    }
+    .review{
+        padding: 0.5rem 2rem;
+        gap: 0.2rem !important;
+        padding: 0 0.5rem !important;
+    }   
+    .review h2{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+@media (max-width: 425px){
+    .links a{
+        display: none;
+    }
+    .navbar{
+        gap: -30rem;
+    }
+    .btn1{
+        display: none;
+    }
+    .review{
+        padding: 0.5rem 2rem;
+        gap: 2rem !important;
+    }   
+    .review h2{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+    .links a{
+        display: none;
+    }
+    .navbar{
+        gap: -30rem;
+    }
+    /* .btn1{
+        display: none;
+    } */
+    .review{
+        padding: 0.5rem 2rem;
+        gap: 3rem;
+    }   
+    .review h2{
+        font-size: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 1024px){
+    .links a{
+        padding: 0 1rem; 
+    }
+    .nav-bar{
+        gap: 6rem;
+    }    
 }
