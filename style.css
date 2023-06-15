@@ -5,7 +5,7 @@ body{
     padding: 0%;
     max-width: 100%;
     font-family: 'poppins';
-    height: 4000px;
+    /* height: 4000px; */
     background-color: #f7f7f7;
     color: #0a0922;
     
@@ -279,7 +279,7 @@ li{
     margin-top: 2rem;
 }
 .p-{
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
 }
 .info{
