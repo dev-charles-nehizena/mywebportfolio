@@ -5,6 +5,9 @@ body{
     padding: 0%;
     max-width: 100%;
     font-family: 'poppins';
+    height: 4000px;
+    background-color: #f7f7f7;
+    color: #0a0922;
 }
 
 
@@ -33,7 +36,12 @@ li{
     align-items: center;
     justify-content: center;
     gap: 15rem;
-    margin: 1rem 3rem;
+    padding: 1rem 0rem;
+    position: fixed;
+    top: 0%;
+    background-color: #f7f7f7;
+    width: 100%;
+    z-index: 1;
 }
 .logo img{
     width: 50px;
@@ -45,9 +53,13 @@ li{
 .links{
     display: flex;
 }
+.links  li {
+  padding: 0 1.4rem;
+}
 .links li a{
-    padding: 0 1.5rem;
     transition: 0.3s ease-in;
+    position: relative;
+    color: #0a0922;
 }
 .btn1{
     background-color: #f8e53f;
@@ -58,18 +70,27 @@ li{
 }
 
 
-.links li a:hover{
-    width: 20px;
-    background-color: none;
-    border-bottom: 5px solid #f8e53f;
-    border-radius: 30px;
-    transition: 0.3s ease-in-out;
+.links li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 25px;
+    width: 100%;
+    height: 4px;
+    background: #f8e53f;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 1s;
+}
+.links li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+    
 }
 
 .btn1:hover{
     width: 20px;
-    background-color: #0a0811;
-    color: #f8e53f;
+    background-color: #f6f1bc;
     transition: 0.5s ease-in-out;
 }
 
@@ -86,8 +107,10 @@ li{
 /* Banner */
 .banner{
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 10rem;
     padding: 0 1rem;
+    position: relative;
+    z-index: 0;
 }
 .with-bg{
     background-color: #f8e53f;
@@ -100,12 +123,112 @@ li{
     border-radius: 5px;
 }
 .banner h1{
-    font-size: 37px;
-    font-weight: 600;
+    font-size: 39px;
+    font-weight: 700;
     margin-top: 1rem;
+    color: #0a0922;
 }
 .p{
-    margin-top: 3rem;
+    margin-top: 2rem;
+    font-size: 20px;
+    color: #0a0922;
+}
+.part1{
+    position: absolute;
+    left: 15rem;
+    bottom: 20rem;
+    width: 100px;
+    animation-name: part1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes part1{
+    10%{
+        /* bottom: 20rem; */
+    }
+    20%{
+        bottom: 18rem;
+    }
+    30%{
+        bottom: 19rem;
+    }
+    40%{
+        bottom: 18rem;
+    }
+    50%{
+        left: 20rem;
+    }
+}
+.part2{
+    position: absolute;
+    left: 10rem;
+    bottom: 8rem;
+    width: 90px;
+    animation-name: part2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes part2{
+    10%{
+        bottom: 6rem;
+    }
+    20%{
+        bottom: 5rem;
+    }
+    30%{
+        left: 14rem;
+    }
+    40%{
+        bottom: 9rem;
+    }
+
+}
+.part3{
+    position: absolute;
+    right: 15rem;
+    bottom: 20rem;
+    width: 80px;
+    animation-name: part3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes part3{
+    20%{
+        bottom: 18rem;
+    }
+    30%{
+        bottom: 19rem;
+    }
+    40%{
+        bottom: 18rem;
+    }
+    50%{
+        right: 20rem;
+    }
+}
+.part4{
+    position: absolute;
+    right: 10rem;
+    bottom: 8rem;
+    width: 90px;
+    animation-name: part4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes part4{
+    10%{
+        bottom: 9rem;
+    }
+    20%{
+        bottom: 8rem;
+    }
+    30%{
+        right: 12rem;
+    }
+    40%{
+        bottom: 9rem;
+    }
+    
 }
 
 .review{
@@ -137,6 +260,75 @@ li{
 
 
 
+
+
+/* ABOUT */
+.about-heading h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.info{
+    display: flex;
+    gap: 5rem;
+    border: 2px solid #ECECEC;
+    width: fit-content;
+    padding: 1rem;
+}
+.info p{
+    font-weight: 500;
+}
+.info span{
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.set1-{
+    margin-top: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 375px){
     .links a{
         display: none;
@@ -145,13 +337,8 @@ li{
         display: none;
     }
     .review{
-        padding: 0.5rem 2rem;
-        gap: 0.2rem !important;
-        padding: 0 0.5rem !important;
+        display: none;
     }   
-    .review h2{
-        font-size: 20px;
-    }
 }
 
 
@@ -169,8 +356,7 @@ li{
         display: none;
     }
     .review{
-        padding: 0.5rem 2rem;
-        gap: 2rem !important;
+        display: none;
     }   
     .review h2{
         font-size: 20px;
@@ -193,8 +379,7 @@ li{
         display: none;
     } */
     .review{
-        padding: 0.5rem 2rem;
-        gap: 3rem;
+        display: none;
     }   
     .review h2{
         font-size: 20px;
