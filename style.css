@@ -8,9 +8,12 @@ body{
     height: 4000px;
     background-color: #f7f7f7;
     color: #0a0922;
+    
 }
 
-
+*{
+    scroll-behavior: smooth;
+}
 
 a{
     color: #0a0811;
@@ -23,12 +26,6 @@ li{
     list-style: none;
 }
 
-/* 
-.header{
-    border: 20px solid #f8e53f;
-    border-radius: 10px;
-    padding-bottom: 3rem;
-} */
 
 /* NAV-BAR */
 .nav-bar{
@@ -107,7 +104,7 @@ li{
 /* Banner */
 .banner{
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 11rem;
     padding: 0 1rem;
     position: relative;
     z-index: 0;
@@ -263,12 +260,25 @@ li{
 
 
 /* ABOUT */
+.about{
+    background-color: #f1f1f1;
+    margin-top: 10rem;
+    padding: 3rem;
+}
 .about-heading h2{
-    font-size: 30px;
+    font-size: 33px;
     font-weight: 600;
     text-align: center;
+    margin: 0;
 }
-.p{
+.about-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+.p-{
     font-size: 17px;
     font-weight: 500;
 }
@@ -278,6 +288,8 @@ li{
     border: 2px solid #ECECEC;
     width: fit-content;
     padding: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 .info p{
     font-weight: 500;
@@ -288,6 +300,18 @@ li{
 }
 .set1-{
     margin-top: 2.5rem;
+}
+.btn2{
+    background-color: #f8e53f;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.7s ease-in-out;
+    margin-top: 5rem;
+}
+.text-about{
+    font-size: 17px;
+    line-height: 2rem;
 }
 
 
@@ -338,7 +362,10 @@ li{
     }
     .review{
         display: none;
-    }   
+    } 
+    .info span{
+        margin-left: 0.2rem;
+    }  
 }
 
 
@@ -360,6 +387,9 @@ li{
     }   
     .review h2{
         font-size: 20px;
+    }
+    .info{
+        gap: 0;
     }
 }
 
@@ -384,6 +414,9 @@ li{
     .review h2{
         font-size: 20px;
     }
+    .about-cont{
+        gap: 10rem;
+    }
 }
 
 
@@ -394,6 +427,12 @@ li{
         padding: 0 1rem; 
     }
     .nav-bar{
-        gap: 6rem;
-    }    
+        gap: 3rem;
+    } 
+    .about-cont{
+        gap: 3rem;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
 }
