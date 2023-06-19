@@ -309,6 +309,11 @@ li{
     transition: 0.7s ease-in-out;
     margin-top: 5rem;
 }
+/* .btn2:hover{
+    width: 20px;
+    background-color: #f6f1bc;
+    transition: 0.5s ease-in-out;
+} */
 .text-about{
     font-size: 17px;
     line-height: 2rem;
@@ -390,6 +395,9 @@ li{
     }
     .info{
         gap: 0;
+    }
+    .bg img{
+        display: none;
     }
 }
 
