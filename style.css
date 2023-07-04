@@ -5,11 +5,12 @@
     font-family: 'poppins';
     scroll-behavior: smooth;
     max-width: 100%;
+    
 }
 
 body {
-    background-color: #f6ffe6;
     color: #0a0922;
+    scrollbar-width:  #5138ed;
 }
 
 
@@ -33,7 +34,7 @@ a {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: #f6ffe6;
+    background-color: #ffffff;
 }
 
 .nav-menu {
@@ -54,12 +55,12 @@ a {
 }
 
 .btn1 {
-    background-color: #f8e53f;
+    background-color: #5138ed;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     font-weight: 500;
     transition: 0.1s ease-in-out;
-    color: #0a0922;
+    color: #fff;
 }
 
 .bar {
@@ -106,27 +107,24 @@ a {
 .banner {
     text-align: center;
     padding: 0 3rem;
-    margin-top: 7rem;
+    margin-top: 13rem;
     font-weight: 400;
     position: relative;
     z-index: 0;
 }
 
 .with-bg {
-    background-color: #f8e53f;
     font-size: 37px;
     font-weight: 600;
     width: fit-content;
     display: inline-block;
     margin: 0;
-    padding: 0.5rem 1.3rem;
     border-radius: 5px;
 }
 
 .banner h1 {
-    font-size: 43px;
+    font-size: 47px;
     font-weight: 700;
-    margin-top: 1rem;
     color: #0a0922;
     font-family: 'Fontspring DEMO - Roc Grotesk';
 }
@@ -186,8 +184,7 @@ a {
 
 /* ABOUT */
 .about {
-    background-color: #f1f1f1;
-    margin-top: 10rem;
+    margin-top: 6rem;
     padding: 5rem;
 
 }
@@ -266,7 +263,7 @@ a {
 
 /* SERVICE */
 .service-all{
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 .service-heading  h2{
     font-size: 35px;
@@ -287,12 +284,13 @@ a {
 }
 
 .card1-a {
-    background: #5138ed;
-    color: #fff;
+    border: 1px solid #E9E5FF;
+    color: #0a0922;
     width: fit-content;
     border-radius: 20px;
-    transition: 0.3s ease-in-out;
     padding: 3rem 1rem;
+    margin-top: 2rem;
+    transition: 0.3s ease-in-out;
 }
 
 .card1-header {
@@ -306,7 +304,7 @@ a {
     max-width: 250px;
     line-height: 1.7rem;
     font-weight: 300;
-    color: #a0a0a0;
+    color: #4a4a4a;
 }
 
 .to-flex {
@@ -317,7 +315,7 @@ a {
 }
 
 .card2-a {
-    border: 1px solid #c8c8c8;
+    border: 1px solid #E9E5FF;
     color: #0a0922;
     width: fit-content;
     border-radius: 20px;
@@ -337,11 +335,11 @@ a {
     max-width: 250px;
     line-height: 1.7rem;
     font-weight: 300;
-    color: #a0a0a0;
+    color: #4a4a4a;
 }
 
 .card3-a {
-    border: 1px solid #c8c8c8;
+    border: 1px solid #E9E5FF;
     color: #0a0922;
     width: fit-content;
     border-radius: 20px;
@@ -360,11 +358,11 @@ a {
     max-width: 250px;
     line-height: 1.7rem;
     font-weight: 300;
-    color: #a0a0a0;
+    color: #4a4a4a;
 }
 
 .card4-a {
-    border: 1px solid #c8c8c8;
+    border: 1px solid #E9E5FF;
     color: #0a0922;
     width: fit-content;
     border-radius: 20px;
@@ -384,7 +382,7 @@ a {
     max-width: 250px;
     line-height: 1.7rem;
     font-weight: 300;
-    color: #a0a0a0;
+    color: #4a4a4a;
 }
 
 
@@ -392,7 +390,7 @@ a {
     font-size: 26px;
     font-weight: 600;
     margin: 0;
-    color: #5138ed;
+    color: #0a0922;
     font-family: 'Fontspring DEMO - Roc Grotesk';
 }
 
@@ -406,12 +404,12 @@ a {
 .line {
     width: 9rem;
     height: 0.2rem;
-    background-color: #5138ed;
+    background-color: #0a0922;
 }
 
 .to-flex2 {
     display: flex;
-    gap: 1rem;
+    gap: 0.7rem;
     align-items: center;
 }
 
@@ -440,20 +438,14 @@ a {
     transform: scale(1.08);
 }
 .card2-a:hover{
-    background: #5138ed;
-    color: #fff;
     transition: 0.5s ease;
     transform: scale(1.08);
 }
 .card3-a:hover{
-    background: #5138ed;
-    color: #fff;
     transition: 0.5s ease;
     transform: scale(1.08);
 }
 .card4-a:hover{
-    background: #5138ed;
-    color: #fff;
     transition: 0.5s ease;
     transform: scale(1.08);
 }
@@ -481,11 +473,13 @@ a {
 
 
 
-
 /* RESPONSIVENESS */
 
 
-@media (max-width: 425px) and (min-width: 200px) {
+@media (max-width: 480px) and (min-width: 200px) {
+    .contact-content{
+        display: none;
+    }
     .banner{
         padding: 0 2rem;
     }
@@ -608,3 +602,80 @@ a {
 
 
 
+/* <!-- contact section --> */
+.contact-content{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: #0a0922;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.fst-contact{
+    margin-right: 50px;
+    margin-top: -25px;
+    line-height: 50px;
+}
+.fst-contact a{
+    color: #5138ed;
+    text-decoration: none;
+}
+.fst-contact h2{
+    color: #0a0922;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.snd-contact{
+    margin-left: 30px;
+}
+.name-sec input{
+    border: none;
+    background-color: #fff;
+    padding-right: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 2px 30px -6px #0000003b;
+}
+.Subjet-sec input{
+    border: none;
+    background-color: #fff;
+    padding-right: 395px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 2px 30px -6px #0000003b;
+    margin-top: 40px;
+}
+.Message-sec input{
+    border: none;
+    background-color: #fff;
+    padding-right: 395px;
+    padding-top: 30px;
+    padding-bottom: 140px;
+    padding-left: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 2px 30px -6px #0000003b;
+    margin-top: 40px;
+}
+.btn3{
+    border: none;
+    background-color: #5138ed;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.btn3:hover{
+    cursor: pointer;
+}
+.box2-content:hover{
+    border: 2px solid #6b6be0;
+}
